@@ -64,7 +64,7 @@ app.get('/api/test-results', async (req, res) => {
 });
 
 // Upload training data
-app.post('/api/train-data', upload.array('images'), async (req, res) => {
+app.post('/api/uploadTrainData', upload.array('images'), async (req, res) => {
     try {
         const images = req.files;
 
